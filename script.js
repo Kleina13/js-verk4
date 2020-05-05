@@ -12,11 +12,14 @@ fetch('https://apis.is/earthquake/is')
     response.json().then( (data) => {
     console.log(data);  // logs all the data into the console
     
-    let the_div  = document.createElement('div'),
+    let the_div, the_img, the_text ;
+
+    for (var i = 0; i < data.results.length; i++) {
+        the_div  = document.createElement('div'),
         the_img  = document.createElement('img'),
         the_text = document.createElement('h2');
 
-    for (var i = 0; i < data.results.length; i++) {
+
         the_div.classList = "item"; // class 
         the_img.src = "dog.png" // image source
         the_text.innerHTML = data.results[i].humanReadableLocation; // name/text

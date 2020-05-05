@@ -1,11 +1,13 @@
 /* default jazz */
 :root {
     --border-color: #152431;
+    --item-color: #152b3d;
+    --bg-color: #0D161D;
 }
 
 body, html {
     margin: 0;
-    background-color: #0D161D;
+    background-color: var(--bg-color);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -13,29 +15,28 @@ body, html {
 h1 {
     text-align: center;
     font-size: 100px;
-    margin-bottom: 10px;
-    color: var(--main-color);
+    margin: 10px 0;
+    color: var(--item-color);
 }
 
 h2 {
-    
+    margin: 10px 15px ;
 }
 
 img {
-    width: 100px;
+    width: 200px;
 }
 
 /* classes */
 .item {
-    width: 400px;
+    width: 550px;
     margin: 5px 0px;
-    border: var(--main-color) 2px solid;
     overflow: hidden;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 100px 300px;
+    grid-template-columns: 200px 350px;
     text-align: center;
-    background-color: #152b3d;
+    background-color: var(--item-color);
     color: whitesmoke;
 }
 
@@ -43,7 +44,7 @@ img {
 /* id's */
 #website {
     background-color: #ffffffad;
-    width: 900px;
+    width: 1200px;
     margin: 0 auto;
     border-radius: 14px;
     margin-bottom: 10px;
@@ -51,6 +52,6 @@ img {
 
 #content {
     display: grid;
-    grid-template-columns: 450px 450px;
+    grid-template-columns: 600px 600px;
     margin: 0 25px ;
 }
