@@ -20,11 +20,21 @@ h1 {
 }
 
 h2 {
-    margin: 10px 15px ;
+    margin: 10px 15px ; 
 }
 
 img {
+    height: 200px;
     width: 200px;
+    overflow: hidden;
+    background-position: center center;
+    object-fit: none; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+}
+
+hr {
+    width: 80%;
+    border-radius: 100px;
 }
 
 /* classes */
@@ -37,7 +47,7 @@ img {
     grid-template-columns: 200px 350px;
     text-align: center;
     background-color: var(--item-color);
-    color: whitesmoke;
+    color: #f5f5f5;
 }
 
 
