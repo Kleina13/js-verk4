@@ -14,6 +14,7 @@ fetch('https://apis.is/sports/handball')
     
     let the_div, the_img, textbox, teams, time, tournament, venue;
 
+    // for loop that goes through all the api results
     for (var i = 0; i < data.results.length; i++) {
         event = data.results[i];
 
@@ -56,4 +57,3 @@ fetch('https://apis.is/sports/handball')
 .catch( (err) => { // error handling
     console.log('Fetch Error :-S', err);
 })
-    
